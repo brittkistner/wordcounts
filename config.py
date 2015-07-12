@@ -26,3 +26,5 @@ class DevelopmentConfig(Config):
 class TestingConfig(Config):
     TESTING = True
 
+# Detecting the correct environment variables for a specific environment
+print(os.environ['DATABASE_URL'])
